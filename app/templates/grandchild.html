@@ -1,0 +1,12 @@
+{% extends "child.html" %}
+
+{% block title %}Grandchild Title{% endblock %}
+
+{% block header %}Grandchild Header{% endblock %}
+
+{% block content %}
+    <h1>{{ super() }}</h1>
+    <p>Grandchild Additional Content</p>
+{% endblock %}
+
+{% block footer %}Grandchild Footer{% endblock %}
